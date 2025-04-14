@@ -4,10 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <hr>
-    <h1>Portfolio</h1>
+    <header>
+        <div class="container">
+            <h1>Gabriel Monteiro Feitosa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="container">
+            <div class="hero-content">
+                <h2>Bem-vindo ao meu portfólio!</h2>
+                <p>Sou um Desenvolvedor Backend apaixonado por criar experiências incríveis.</p>
+                <a href="#projetos" class="button">Ver Projetos</a>
+            </div>   
+        </section>
+
+        <section id="sobre" class="container">
+            <h2>Sobre Mim</h2>
+            <p>
+                Comecei na programação em 2024 quando entrei na faculdade de Engenharia da Computação, na segunda metade do mesmo ano, conheci as linguagens de programação, foi aí que decidi mudar para Engenharia de Software. 
+                Atualmente estou aprendendo a programar e me aprofundando em algumas linguagens de programação, como: 
+                <strong>HTML, CSS, JavaScript, C e Python.</strong> Busco me aprimorar e aprender mais sobre as principais linguagens de programação e seus frameworks.
+            </p>
+            <ul>
+                <li><strong>Habilidades: </strong>C, Python, HTML, CSS, JavaScript.</li>
+                <li><strong>Experiência: </strong>Fiz pequenos projetos Pessoais, Utilizando C, Python, HTML, CSS e JavaScript.</li>
+                <li><strong>Educação: </strong>Acadêmico em Engenharia de Software.</li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200?text=Projeto+1" alt="projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Breve descrição do Projeto 1.</p>
+                    <a href="#" target="_blank">Ver Detalhes</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200?text=Projeto+2" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Breve descrição do Projeto 2.</p>
+                    <a href="#" target="_blank">Ver Detalhes</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <p>Sinta-se a vontade para entrar em contato comigo!</p>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy;Gabriel M. Feitosa. Todos os direitos reservados.</p>
+        </div>
+        <button id="backToTopBtn" title="Voltar ao topo">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z" />
+            </svg>
+        </button>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
